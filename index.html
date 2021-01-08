@@ -1,12 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-	<title>BitMesh</title>
-	<script src="charting_library.min.js"></script>
-	<link rel="stylesheet" href="index.css" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="//s.factorymart1.com/icons/logo.png" type="image/x-icon">
+<title>BitMesh Exchange</title>
+<meta data-n-head="true" http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta data-n-head="true" data-hid="keywords" name="keywords" content="Bimtesh, 比特币，以太坊，买卖比特币，交易所，数字货币，虚拟货币，Bitcoin, BTC, Litecoin, LTC, Ethereum, ETH, buy Bitcoin, sell Bitcoin, exchange, trading, cryptocurrency, digital asset, beam exchange, grin exchange, grin purse, grinpurse, grin钱包"/>
+<meta data-n-head="true" data-hid="description" name="description" content="World's First Free Listing blockchain incubator & User as Owner Exchange: BitMesh lists good projects for free, users trading on BitMesh will get ownership token, which gives users the right to share profit generated through trading fee proceeds"/>
+<meta name="google-site-verification" content="RAcx6ZwWqegC_tz009xNC0CiKfh--E8K-DiSrSoarqU" />
+
+  <script>
+    if (0) {
+      location.href = `https://s.factorymart1.com/maintenance.html`
+    }
+  </script>
+  <script>
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) 
+      && window.screen.width <= 750
+      && location.hash.length <= 3
+      && location.href.indexOf('noRedirection') === -1
+      && 1) {
+        location.href = 'https://m.bitmesh.com/';
+    };
+  </script>
+  <link rel="stylesheet" href="index.css" />
   <script src="https://s.factorymart1.com/btcexg/global-cdn/react.production.min.js"></script>
 	<script src="https://s.factorymart1.com/btcexg/global-cdn/react-dom.production.min.js"></script>
   <!-- Start of bdealshelp Zendesk Widget script -->
@@ -20,134 +39,31 @@
   </script> -->
   <!-- End of bdealshelp Zendesk Widget script -->
 </head>
-
+<style>
+body {
+  height: 100%;
+}
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: transparent;
+}
+</style>
 <body class="dark">
-	<div id="root"></div>
-	<script>
-		var currentMarket = {
-			name: "btc_eth",
-			stock: "eth",
-			funds: "btc",
-		};
-
-		var config = {
-			"maker_fee": 1,
-			"taker_fee": 1,
-			"price_limit": 10,
-			"markets": [
-				{
-					"market": "btc",
-					"enable": "true",
-					"min_amount": 4,
-					"stocks": [
-						{
-							"name": "eth",
-							"enable": "true",
-							"money_prec": 8,
-							"stock_prec": 8,
-							"min_amount": 3,
-							"group": 8
-						},
-						{
-							"name": "ltc",
-							"enable": "true",
-							"money_prec": 8,
-							"stock_prec": 8,
-							"min_amount": 3,
-							"group": 8
-						}
-					]
-				},
-				{
-					"market": "usdt",
-					"enable": "true",
-					"min_amount": 2,
-					"stocks": [
-						{
-							"name": "btc",
-							"enable": "true",
-							"money_prec": 2,
-							"stock_prec": 8,
-							"min_amount": 3,
-							"group": 2
-						},
-						{
-							"name": "eth",
-							"enable": "true",
-							"money_prec": 2,
-							"stock_prec": 8,
-							"min_amount": 3,
-							"group": 2
-						},
-						{
-							"name": "bch",
-							"enable": "true",
-							"money_prec": 2,
-							"stock_prec": 8,
-							"min_amount": 3,
-							"group": 2
-						}
-					]
-				},
-				{
-					"market": "bch",
-					"enable": "true",
-					"stocks": [
-						{
-							"name": "btc",
-							"enable": "true",
-							"money_prec": 8,
-							"stock_prec": 8,
-							"min_amount": 3,
-							"group": 8
-						},
-						{
-							"name": "eth",
-							"enable": "true",
-							"money_prec": 8,
-							"stock_prec": 8,
-							"min_amount": 3,
-							"group": 8
-						},
-						{
-							"name": "ltc",
-							"enable": "true",
-							"money_prec": 8,
-							"stock_prec": 8,
-							"min_amount": 3,
-							"group": 8
-						}
-					]
-				},
-				{
-					"market": "eth",
-					"enable": "true",
-					"stocks": [
-						{
-							"name": "ltc",
-							"enable": "true",
-							"money_prec": 8,
-							"stock_prec": 8,
-							"min_amount": 3,
-							"group": 8
-						}
-					]
-				}
-			]
-		}
-	</script>
-	<script>
-		var search = location.search;
-		if (search.indexOf('light') === -1) {
-			document.body.className = 'dark';
-		} else {
-			document.body.className = 'light';
-		}
-	</script>
-	
+  <div id="root">
+    <div class="loading">
+      loading...
+    </div>
+  </div>
   <script src="https://s.factorymart1.com/lib/webim.min.js"></script>
-	<script src="https://cstaticdun.126.net/load.min.js"></script>
-	<script src="index.js"></script>
-</body>
+  <script src="index.js"></script>
+  <script src="https://cstaticdun.126.net/load.min.js"></script>
+  <style type="text/css">
+  a[href="https://www.cnzz.com/stat/website.php?web_id=1275845163"] { display: none; }
+</style>
+<script src="//s5.cnzz.com/z_stat.php?id=1275845163&web_id=1275845163" language="JavaScript"></script>
 
+</body>
 </html>
